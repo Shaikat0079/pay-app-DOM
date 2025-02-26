@@ -17,7 +17,9 @@
         <nav class="flex justify-around items-center">
           <img class="w-16" src="./assets/Group.png" alt="" />
           <article>
-            <h1 id="" class="text-3xl font-bold">$ <span id="main-balance">4500</span></h1>
+            <h1 id="" class="text-3xl font-bold">
+              $ <span id="main-balance">4500</span>
+            </h1>
             <p class="border rounded p-2">Available Balance</p>
           </article>
           <button>Log Out</button>
@@ -57,51 +59,104 @@
         </div>
         <div id="add-value">
           <h2>Add Money</h2>
-            <div class="hero-content">
-              <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-                <div class="card-body">
-                    <legend>Select Bank</legend>
-                  <select class="select">
-                    <option disabled selected>Pick any Bank</option>
-                    <option value="Commonwealth">Commonwealth Bank</option>
-                    <option value="NAB">National Australia Bank </option>
-                    <option value="Westpac">Westpac</option>
-                    <option value="ANZ">ANZ</option>
-                  </select>
-                  <fieldset class="fieldset">
-                    <label class="fieldset-label">Account Number</label>
-                    <input value="11111111111" id="account-number" type="number" class="input" placeholder="type your Number" required />
-                    <label class="fieldset-label">Amount</label>
-                    <input value="0" id="amount" type="number" class="input" placeholder="type your Amount" required />
-                    <label class="fieldset-label">PIN</label>
-                    <input id="pin" type="text" class="input" placeholder="type your PIN" required/>
-                    <div><a class="link link-hover">Forgot your PIN?</a></div>
-                    <button id="add-money" class="btn btn-neutral bg-blue-600 border-none">Add Money</button>
-                  </fieldset>
-                </div>
+          <div class="hero-content">
+            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+              <div class="card-body">
+                <legend>Select Bank</legend>
+                <select class="select">
+                  <option disabled selected>Pick any Bank</option>
+                  <option value="Commonwealth">Commonwealth Bank</option>
+                  <option value="NAB">National Australia Bank</option>
+                  <option value="Westpac">Westpac</option>
+                  <option value="ANZ">ANZ</option>
+                </select>
+                <fieldset class="fieldset">
+                  <label class="fieldset-label">Account Number</label>
+                  <input
+                    value="11111111111"
+                    id="account-number"
+                    type="number"
+                    class="input"
+                    placeholder="type your Number"
+                    required
+                  />
+                  <label class="fieldset-label">Amount</label>
+                  <input
+                    value="0"
+                    id="amount"
+                    type="number"
+                    class="input"
+                    placeholder="type your Amount"
+                    required
+                  />
+                  <label class="fieldset-label">PIN</label>
+                  <input
+                    id="pin"
+                    type="text"
+                    class="input"
+                    placeholder="type your PIN"
+                    required
+                  />
+                  <div><a class="link link-hover">Forgot your PIN?</a></div>
+                  <button
+                    id="add-money"
+                    class="btn btn-neutral bg-blue-600 border-none"
+                  >
+                    Add Money
+                  </button>
+                </fieldset>
               </div>
             </div>
+          </div>
         </div>
         <div id="cash-out">
-            <h2>Cash Out</h2>
-            <div  class="hero-content card">
-                <div class="card-body bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-                    <fieldset class="fieldset">
-                        <label class="fieldset-label">Account Number</label>
-                        <input value="11111111111" id="account-number" type="number" class="input" placeholder="type your Number" required />
-                        <label class="fieldset-label">Amount</label>
-                        <input value="0" id="amount" type="number" class="input" placeholder="type your Amount" required />
-                        <label class="fieldset-label">PIN</label>
-                        <input id="pin" type="text" class="input" placeholder="type your PIN" required/>
-                        <div><a class="link link-hover">Forgot your PIN?</a></div>
-                        <button id="add-money" class="btn btn-neutral bg-blue-600 border-none">Cash Out</button>
-                      </fieldset>
-                </div>
+          <h2>Cash Out</h2>
+          <div class="hero-content card">
+            <div
+              class="card-body bg-base-100 w-full max-w-sm shrink-0 shadow-2xl"
+            >
+              <fieldset class="fieldset">
+                <label class="fieldset-label">Account Number</label>
+                <input
+                  value="11111111111"
+                  id="account-number"
+                  type="number"
+                  class="input"
+                  placeholder="type your Number"
+                  required
+                />
+                <label class="fieldset-label">Amount</label>
+                <input
+                  value="0"
+                  id="cashout-amount"
+                  type="number"
+                  class="input"
+                  placeholder="type your Amount"
+                  required
+                />
+                <label class="fieldset-label">PIN</label>
+                <input
+                  id="cashout-pin"
+                  type="text"
+                  class="input"
+                  placeholder="type your PIN"
+                  required
+                />
+                <div><a class="link link-hover">Forgot your PIN?</a></div>
+                <button
+                  id="cash-remove"
+                  class="btn btn-neutral bg-blue-600 border-none"
+                >
+                  Cash Out
+                </button>
+              </fieldset>
             </div>
+          </div>
         </div>
       </article>
     </section>
     <script src="./script/addMoney.js"></script>
     <script src="./script/toggle.js"></script>
+    <script src="./script/cashout.js"></script>
   </body>
 </html>
