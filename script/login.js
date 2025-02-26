@@ -11,7 +11,8 @@ document.getElementById('login-btn').addEventListener('click',function(event){
         console.log(typeof(pin))
         console.log("Yess")
         if(pin === 1234){
-            console.log("bhalo")
+            // console.log("bhalo")
+            window.location.href="./main.html"
         }
     }else{
         console.log("Invalid")

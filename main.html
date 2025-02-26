@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-slate-800">
+    <section class="max-w-md min-h-screen mx-auto py-6 bg-gray-200">
+      <header>
+        <nav class="flex justify-around items-center">
+          <img class="w-16" src="./assets/Group.png" alt="" />
+          <article>
+            <h1 class="text-3xl font-bold">$ 4500</h1>
+            <p class="border rounded p-2">Available Balance</p>
+          </article>
+          <button>Log Out</button>
+        </nav>
+      </header>
+      <article class="my-10">
+        <h1 class="text-2xl font-bold">Welcome to Pay DOM</h1>
+        <p>
+          Enjoy easy and convenient financial services with us. Cashout charge
+          is low and
+        </p>
+        <div class="cards grid grid-cols-3 my-12 mx-4 gap-4">
+          <div class="box border p-4 text-center rounded-sm">
+            <img class="w-8 mx-auto" src="./assets/wallet1.png" alt="" />
+            <h3>Add Money</h3>
+          </div>
+          <div class="box border p-4 text-center rounded-sm">
+            <img class="w-8 mx-auto" src="./assets/money1.png" alt="" />
+            <h3>Cash Out</h3>
+          </div>
+          <div class="box border p-4 text-center rounded-sm">
+            <img class="w-8 mx-auto" src="./assets/bonus1.png" alt="" />
+            <h3>Bonus</h3>
+          </div>
+          <div class="box border p-4 text-center rounded-sm">
+            <img class="w-8 mx-auto" src="./assets/purse1.png" alt="" />
+            <h3>Transfer Money</h3>
+          </div>
+          <div class="box border p-4 text-center rounded-sm">
+            <img class="w-8 mx-auto" src="./assets/send1.png" alt="" />
+            <h3>Pay Bill</h3>
+          </div>
+          <div class="box border p-4 text-center rounded-sm">
+            <img class="w-8 mx-auto" src="./assets/transaction1.png" alt="" />
+            <h3>Transaction History</h3>
+          </div>
+        </div>
+        <div>
+          <h2>Add Money</h2>
+          <div class="">
+            <div class="hero-content">
+              <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <div class="card-body">
+                    <legend>Select Bank</legend>
+                  <select class="select">
+                    <option disabled selected>Pick any Bank</option>
+                    <option value="Commonwealth">Commonwealth Bank</option>
+                    <option value="NAB">National Australia Bank </option>
+                    <option value="Westpac">Westpac</option>
+                    <option value="ANZ">ANZ</option>
+                  </select>
+                  <fieldset class="fieldset">
+                    <label class="fieldset-label">Account Number</label>
+                    <input value="11111111111" id="account-number" type="number" class="input" placeholder="type your Number" required />
+                    <label class="fieldset-label">PIN</label>
+                    <input id="pin" type="text" class="input" placeholder="type your PIN" required/>
+                    <div><a class="link link-hover">Forgot your PIN?</a></div>
+                    <button id="login-btn" class="btn btn-neutral bg-blue-600 border-none">Add Money</button>
+                  </fieldset>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </body>
+</html>
