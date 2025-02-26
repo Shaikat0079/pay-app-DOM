@@ -12,12 +12,12 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body class="bg-slate-800">
-    <section class="max-w-md min-h-screen mx-auto py-6 bg-gray-200">
+    <section class="max-w-md min-h-screen mx-auto p-6 bg-gray-200">
       <header>
         <nav class="flex justify-around items-center">
           <img class="w-16" src="./assets/Group.png" alt="" />
           <article>
-            <h1 class="text-3xl font-bold">$ 4500</h1>
+            <h1 id="" class="text-3xl font-bold">$ <span id="main-balance">4500</span></h1>
             <p class="border rounded p-2">Available Balance</p>
           </article>
           <button>Log Out</button>
@@ -29,7 +29,7 @@
           Enjoy easy and convenient financial services with us. Cashout charge
           is low and
         </p>
-        <div class="cards grid grid-cols-3 my-12 mx-4 gap-4">
+        <div class="cards grid grid-cols-3 my-12 mx-2 gap-4">
           <div class="box border p-4 text-center rounded-sm">
             <img class="w-8 mx-auto" src="./assets/wallet1.png" alt="" />
             <h3>Add Money</h3>
@@ -72,10 +72,12 @@
                   <fieldset class="fieldset">
                     <label class="fieldset-label">Account Number</label>
                     <input value="11111111111" id="account-number" type="number" class="input" placeholder="type your Number" required />
+                    <label class="fieldset-label">Amount</label>
+                    <input value="0" id="amount" type="number" class="input" placeholder="type your Amount" required />
                     <label class="fieldset-label">PIN</label>
                     <input id="pin" type="text" class="input" placeholder="type your PIN" required/>
                     <div><a class="link link-hover">Forgot your PIN?</a></div>
-                    <button id="login-btn" class="btn btn-neutral bg-blue-600 border-none">Add Money</button>
+                    <button id="add-money" class="btn btn-neutral bg-blue-600 border-none">Add Money</button>
                   </fieldset>
                 </div>
               </div>
@@ -84,5 +86,6 @@
         </div>
       </article>
     </section>
+    <script src="./script/addMoney.js"></script>
   </body>
 </html>
