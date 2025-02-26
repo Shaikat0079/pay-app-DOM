@@ -30,11 +30,11 @@
           is low and
         </p>
         <div class="cards grid grid-cols-3 my-12 mx-2 gap-4">
-          <div class="box border p-4 text-center rounded-sm">
+          <div id="add-money-btn" class="box border p-4 text-center rounded-sm">
             <img class="w-8 mx-auto" src="./assets/wallet1.png" alt="" />
             <h3>Add Money</h3>
           </div>
-          <div class="box border p-4 text-center rounded-sm">
+          <div id="cash-out-btn" class="box border p-4 text-center rounded-sm">
             <img class="w-8 mx-auto" src="./assets/money1.png" alt="" />
             <h3>Cash Out</h3>
           </div>
@@ -55,9 +55,8 @@
             <h3>Transaction History</h3>
           </div>
         </div>
-        <div>
+        <div id="add-value">
           <h2>Add Money</h2>
-          <div class="">
             <div class="hero-content">
               <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                 <div class="card-body">
@@ -82,10 +81,27 @@
                 </div>
               </div>
             </div>
-          </div>
+        </div>
+        <div id="cash-out">
+            <h2>Cash Out</h2>
+            <div  class="hero-content card">
+                <div class="card-body bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <fieldset class="fieldset">
+                        <label class="fieldset-label">Account Number</label>
+                        <input value="11111111111" id="account-number" type="number" class="input" placeholder="type your Number" required />
+                        <label class="fieldset-label">Amount</label>
+                        <input value="0" id="amount" type="number" class="input" placeholder="type your Amount" required />
+                        <label class="fieldset-label">PIN</label>
+                        <input id="pin" type="text" class="input" placeholder="type your PIN" required/>
+                        <div><a class="link link-hover">Forgot your PIN?</a></div>
+                        <button id="add-money" class="btn btn-neutral bg-blue-600 border-none">Cash Out</button>
+                      </fieldset>
+                </div>
+            </div>
         </div>
       </article>
     </section>
     <script src="./script/addMoney.js"></script>
+    <script src="./script/toggle.js"></script>
   </body>
 </html>
